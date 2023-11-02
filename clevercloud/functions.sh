@@ -24,7 +24,7 @@ export -f protect_application
 
 function build_app() {
   cd ${APP_HOME}/app
-  composer install --prefer-dist --no-dev --optimize-autoloader -n -v
+  composer.phar install --prefer-dist --no-dev --optimize-autoloader -n -v
   php -d memory_limit=-1 ./bin/console asset-map:compile -n -v
   php -d memory_limit=-1 ./bin/console doctrine:migr:migr -n -v
   php -d memory_limit=-1 ./bin/console tailwind:build --minify -n -v
