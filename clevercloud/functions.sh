@@ -3,8 +3,7 @@
 set -o errexit -o nounset -o xtrace
 
 function deploy_artifact() {
-  tar xvzf application.tgz
-  rm -f application.tgz
+  return 0
 }
 export -f deploy_artifact
 
