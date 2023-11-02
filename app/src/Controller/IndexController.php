@@ -20,6 +20,12 @@ final class IndexController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isSubmitted()) {
+
+            if (!$form->isValid()) {
+                $this->addFlash('error', 'It seems that your email address is invalid. Please try again.');
+                return $this->redirectToRoute('app');
+            }
+
             $submittedToken = $request->request->get('_token');
             if (!$this->isCsrfTokenValid('registration', $submittedToken)) {
                 throw $this->createAccessDeniedException('Invalid CSRF token');
@@ -30,7 +36,7 @@ final class IndexController extends AbstractController
             $em->persist($registration);
             $em->flush();
 
-            $this->addFlash('success', 'Thank you for registering!');
+            $this->addFlash('success', 'Thank you for registering! We will send you an email when the Kickstarter is live!');
             return $this->redirectToRoute('app');
         }
 
