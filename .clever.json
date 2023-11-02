@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "app_id": "app_5fcde0ed-29b5-4825-bc3e-f9f1f35fdb38",
+      "org_id": "orga_3a5e7212-5c23-4026-8d9a-c2cb8000b008",
+      "deploy_url": "https://github.com/monsieurbiz/elephpant-landing.git",
+      "name": "sylius-elephpant-prod",
+      "alias": "sylius-elephpant-prod"
+    }
+  ]
+}
