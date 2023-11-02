@@ -1,5 +1,3 @@
 app:
   path: /
-  controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
-  defaults:
-    template: index.html.twig
+  controller: App\Controller\IndexController
