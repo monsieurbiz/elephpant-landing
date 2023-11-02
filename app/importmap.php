@@ -24,4 +24,7 @@ return [
     '@tailwindcss/forms' => [
         'url' => 'https://cdn.jsdelivr.net/npm/@tailwindcss/forms@0.5.6/+esm',
     ],
+    'alpinejs' => [
+        'url' => 'https://cdn.jsdelivr.net/npm/alpinejs@3.13.2/+esm',
+    ],
 ];
