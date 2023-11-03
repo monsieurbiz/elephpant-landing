@@ -11,6 +11,7 @@
         "doctrine/doctrine-migrations-bundle": "^3.2",
         "doctrine/orm": "^2.16",
         "gedmo/doctrine-extensions": "^3.13",
+        "symfony/apache-pack": "^1.0",
         "symfony/asset": "6.3.*",
         "symfony/asset-mapper": "6.3.*",
         "symfony/console": "6.3.*",
