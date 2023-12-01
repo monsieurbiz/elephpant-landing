@@ -48,7 +48,14 @@
                         <div class="mx-auto max-w-2xl text-center">
                             <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Get your very own Sylius elePHPant!</h1>
 
-                            {% include "component/countdown.html.twig" %}
+                            {# {% include "component/countdown.html.twig" %} #}
+                            <div class="mx-auto mt-16">
+                                <button class="text-4xl font-bold px-12 py-8 bg-emerald-400 hover:bg-emerald-500 text-white font-bold border-b-4 border-emerald-700 hover:border-emerald-700 rounded">
+                                  <a href="https://www.kickstarter.com/projects/734475887/sylius-elephpant">
+                                    Get yours now!
+                                  </a>
+                                </button>        
+                            </div>
                         </div>
 
                         <!-- Logo cloud -->
@@ -63,7 +70,7 @@
 
 
                             <!-- Form -->
-                            <div class="bg-white py-10">
+                            {# <div class="bg-white py-10">
                                 <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
                                     <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 shadow-2xl rounded-3xl sm:px-24 xl:py-32">
                                         <h2 class="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">Get notified for the crowdfunding!</h2>
@@ -94,7 +101,7 @@
                                         </svg>
                                     </div>
                                 </div>
-                            </div>
+                            </div> #}
                             <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
                                 <img src="{{ asset('images/main-photo-cropped.jpg') }}" alt="Some elePHPant with Sylius elePHPant" class="rounded-3xl shadow-2xl ring-1 ring-gray-900/10">
                             </div>
@@ -113,196 +120,51 @@
                 <div class="flex justify-center my-10">
                     <nav aria-label="Progress">
                         <ol role="list" class="overflow-hidden">
-                            <li class="relative pb-10">
-                                <div class="absolute left-4 top-4 -ml-px mt-0.5 h-full w-0.5 bg-indigo-600"
-                                     aria-hidden="true"></div>
-                                <!-- Complete Step -->
-                                <div class="group relative flex items-start">
-                                    <span class="flex h-9 items-center">
-                                      <span class="relative z-10 flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 group-hover:bg-indigo-800">
-                                        <svg class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                          <path fill-rule="evenodd"
-                                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                                                clip-rule="evenodd"/>
-                                        </svg>
-                                      </span>
-                                    </span>
-                                    <span class="ml-4 flex min-w-0 flex-col">
-                                      <span class="text-sm font-medium">Create the prototype with Vincent Pontier and the Factory</span>
-                                      <span class="text-sm text-gray-500">The prototype has been made in 2020 already. We received it in june 2020.</span>
-                                    </span>
-                                </div>
-                            </li>
-                            <li class="relative pb-10">
-                                <div class="absolute left-4 top-4 -ml-px mt-0.5 h-full w-0.5 bg-indigo-600"
-                                     aria-hidden="true"></div>
-                                <!-- Complete Step -->
-                                <div class="group relative flex items-start">
-                                    <span class="flex h-9 items-center">
-                                      <span class="relative z-10 flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 group-hover:bg-indigo-800">
-                                        <svg class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                          <path fill-rule="evenodd"
-                                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                                                clip-rule="evenodd"/>
-                                        </svg>
-                                      </span>
-                                    </span>
-                                    <span class="ml-4 flex min-w-0 flex-col">
-                                      <span class="text-sm font-medium">Select the ESAT</span>
-                                      <span class="text-sm text-gray-500">We've selected a medico-social establishment for protected<br>work/jobs, reserved for people with disabilities and aimed at<br>their social and professional integration or reintegration (ESAT) in Paris (France).</span>
-                                    </span>
-                                </div>
-                            </li>
-                            <li class="relative pb-10">
-                                <div class="absolute left-4 top-4 -ml-px mt-0.5 h-full w-0.5 bg-indigo-600"
-                                     aria-hidden="true"></div>
-                                <!-- Complete Step -->
-                                <div class="group relative flex items-start">
-                                    <span class="flex h-9 items-center">
-                                      <span class="relative z-10 flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 group-hover:bg-indigo-800">
-                                        <svg class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                          <path fill-rule="evenodd"
-                                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                                                clip-rule="evenodd"/>
-                                        </svg>
-                                      </span>
-                                    </span>
-                                    <span class="ml-4 flex min-w-0 flex-col">
-                                      <span class="text-sm font-medium">Initiate the Kickstarter page</span>
-                                      <span class="text-sm text-gray-500">All the work on the Kickstarter page has been made.</span>
-                                    </span>
-                                </div>
-                            </li>
-                            <li class="relative pb-10">
-                                <div class="absolute left-4 top-4 -ml-px mt-0.5 h-full w-0.5 bg-indigo-600"
-                                     aria-hidden="true"></div>
-                                <!-- Complete Step -->
-                                <div class="group relative flex items-start">
-                                    <span class="flex h-9 items-center">
-                                      <span class="relative z-10 flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 group-hover:bg-indigo-800">
-                                        <svg class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                          <path fill-rule="evenodd"
-                                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                                                clip-rule="evenodd"/>
-                                        </svg>
-                                      </span>
-                                    </span>
-                                    <span class="ml-4 flex min-w-0 flex-col">
-                                      <span class="text-sm font-medium">Quickly create a Landing page before the SyliusCon 2023 in Poznan!</span>
-                                      <span class="text-sm text-gray-500">Our flights got delayed, so we took the time to create the page you are seeing now!</span>
-                                    </span>
-                                </div>
-                            </li>
-                            <li class="relative pb-10">
-                                <div class="absolute left-4 top-4 -ml-px mt-0.5 h-full w-0.5 bg-gray-300"
-                                     aria-hidden="true"></div>
-                                <!-- Current Step -->
-                                <div class="group relative flex items-start" aria-current="step">
-                                    <span class="flex h-9 items-center" aria-hidden="true">
-                                      <span class="relative z-10 flex h-8 w-8 items-center justify-center rounded-full border-2 border-indigo-600 bg-white">
-                                        <span class="h-2.5 w-2.5 rounded-full bg-indigo-600"></span>
-                                      </span>
-                                    </span>
-                                    <span class="ml-4 flex min-w-0 flex-col">
-                                      <span class="text-sm font-medium text-indigo-600">Get the shipping estimates from the carrier</span>
-                                      <span class="text-sm text-gray-500">We are currently working with the ESAT to estimate the shipping<br>for all around the World so everybody will be able to get their own elePHPant!</span>
-                                    </span>
-                                </div>
-                            </li>
-                            <li class="relative pb-10">
-                                <div class="absolute left-4 top-4 -ml-px mt-0.5 h-full w-0.5 bg-gray-300"
-                                     aria-hidden="true"></div>
-                                <!-- Upcoming Step -->
-                                <div class="group relative flex items-start">
-                                    <span class="flex h-9 items-center" aria-hidden="true">
-                                      <span class="relative z-10 flex h-8 w-8 items-center justify-center rounded-full border-2 border-gray-300 bg-white group-hover:border-gray-400">
-                                        <span class="h-2.5 w-2.5 rounded-full bg-transparent group-hover:bg-gray-300"></span>
-                                      </span>
-                                    </span>
-                                    <span class="ml-4 flex min-w-0 flex-col">
-                                      <span class="text-sm font-medium text-gray-500">Launch the Kickstarter page</span>
-                                        <span class="text-sm text-gray-500">When we get the shipping estimates we will enter them in our<br>kickstarter page and start to collect from you!<br><b>At this step you will all receive an email telling you that the Kickstarter is live!</b></span>
-                                    </span>
-                                </div>
-                            </li>
-                            <li class="relative pb-10">
-                                <div class="absolute left-4 top-4 -ml-px mt-0.5 h-full w-0.5 bg-gray-300"
-                                     aria-hidden="true"></div>
-                                <!-- Upcoming Step -->
-                                <a href="#" class="group relative flex items-start">
-                                    <span class="flex h-9 items-center" aria-hidden="true">
-                                      <span class="relative z-10 flex h-8 w-8 items-center justify-center rounded-full border-2 border-gray-300 bg-white group-hover:border-gray-400">
-                                        <span class="h-2.5 w-2.5 rounded-full bg-transparent group-hover:bg-gray-300"></span>
-                                      </span>
-                                    </span>
-                                    <span class="ml-4 flex min-w-0 flex-col">
-                                      <span class="text-sm font-medium text-gray-500">Wait a month.</span>
-                                      <span class="text-sm text-gray-500">We need to wait a month for everybody to order their elePHPant<br>on Kickstarter. 30 days is enough.</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="relative pb-10">
-                                <div class="absolute left-4 top-4 -ml-px mt-0.5 h-full w-0.5 bg-gray-300"
-                                     aria-hidden="true"></div>
-                                <!-- Upcoming Step -->
-                                <a href="#" class="group relative flex items-start">
-                                    <span class="flex h-9 items-center" aria-hidden="true">
-                                      <span class="relative z-10 flex h-8 w-8 items-center justify-center rounded-full border-2 border-gray-300 bg-white group-hover:border-gray-400">
-                                        <span class="h-2.5 w-2.5 rounded-full bg-transparent group-hover:bg-gray-300"></span>
-                                      </span>
-                                    </span>
-                                    <span class="ml-4 flex min-w-0 flex-col">
-                                      <span class="text-sm font-medium text-gray-500">Order the plush to the factory in China</span>
-                                      <span class="text-sm text-gray-500">When we have the number of elephpants that we need to produce<br>we will place an order with the factory.</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="relative pb-10">
-                                <div class="absolute left-4 top-4 -ml-px mt-0.5 h-full w-0.5 bg-gray-300"
-                                     aria-hidden="true"></div>
-                                <!-- Upcoming Step -->
-                                <a href="#" class="group relative flex items-start">
-                                    <span class="flex h-9 items-center" aria-hidden="true">
-                                      <span class="relative z-10 flex h-8 w-8 items-center justify-center rounded-full border-2 border-gray-300 bg-white group-hover:border-gray-400">
-                                        <span class="h-2.5 w-2.5 rounded-full bg-transparent group-hover:bg-gray-300"></span>
-                                      </span>
-                                    </span>
-                                    <span class="ml-4 flex min-w-0 flex-col">
-                                      <span class="text-sm font-medium text-gray-500">Get the elePHPants delivered to Paris, France.</span>
-                                      <span class="text-sm text-gray-500">We will ship all the elePHPants to our ESAT partner, they will ensure<br>that all plush arrive to their owner!</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="relative pb-10">
-                                <div class="absolute left-4 top-4 -ml-px mt-0.5 h-full w-0.5 bg-gray-300"
-                                     aria-hidden="true"></div>
-                                <!-- Upcoming Step -->
-                                <a href="#" class="group relative flex items-start">
-                                    <span class="flex h-9 items-center" aria-hidden="true">
-                                      <span class="relative z-10 flex h-8 w-8 items-center justify-center rounded-full border-2 border-gray-300 bg-white group-hover:border-gray-400">
-                                        <span class="h-2.5 w-2.5 rounded-full bg-transparent group-hover:bg-gray-300"></span>
-                                      </span>
-                                    </span>
-                                    <span class="ml-4 flex min-w-0 flex-col">
-                                      <span class="text-sm font-medium text-gray-500">Shipping thousands of elePHPants.</span>
-                                      <span class="text-sm text-gray-500">The ESAT will ship all the plush toys to their owner all around the World. It may<br>take some time to perform such operation since we expect to have at least<br>3000 elePHPants to ship!</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="relative">
-                                <!-- Upcoming Step -->
-                                <a href="#" class="group relative flex items-start">
-                                    <span class="flex h-9 items-center" aria-hidden="true">
-                                      <span class="relative z-10 flex h-8 w-8 items-center justify-center rounded-full border-2 border-gray-300 bg-white group-hover:border-gray-400">
-                                        <span class="h-2.5 w-2.5 rounded-full bg-transparent group-hover:bg-gray-300"></span>
-                                      </span>
-                                    </span>
-                                    <span class="ml-4 flex min-w-0 flex-col">
-                                      <span class="text-sm font-medium text-gray-500">Everybody is happy ❤️</span>
-                                      <span class="text-sm text-gray-500">You all get your elePHPant and you can spread the World about Sylius!</span>
-                                    </span>
-                                </a>
-                            </li>
+                            {% include 'component/steps/done.html.twig' with {
+                              'title' : 'Create the prototype with Vincent Pontier and the Factory',
+                              'description' : 'The prototype has been made in 2020 already. We received it in june 2020.'
+                            } %}
+                            {% include 'component/steps/done.html.twig' with {
+                              'title' : 'Select the ESAT',
+                              'description' : 'We\'ve selected a medico-social establishment for protected<br>work/jobs, reserved for people with disabilities and aimed at<br>their social and professional integration or reintegration (ESAT) in Paris (France).'
+                            } %}
+                            {% include 'component/steps/done.html.twig' with {
+                              'title' : 'Initiate the Kickstarter page',
+                              'description' : 'All the work on the Kickstarter page has been made.'
+                            } %}
+                            {% include 'component/steps/done.html.twig' with {
+                              'title' : 'Quickly create a Landing page before the SyliusCon 2023 in Poznan!',
+                              'description' : 'Our flights got delayed, so we took the time to create the page you are seeing now!'
+                            } %}
+                            {% include 'component/steps/done.html.twig' with {
+                              'title' : 'Get the shipping estimates from the carrier',
+                              'description' : 'We are currently working with the ESAT to estimate the shipping<br>for all around the World so everybody will be able to get their own elePHPant!'
+                            } %}
+                            {% include 'component/steps/current.html.twig' with {
+                              'title' : 'Launch the Kickstarter page',
+                              'description' : 'When we get the shipping estimates we will enter them in our<br>kickstarter page and start to collect from you!<br><b>At this step you will all receive an email telling you that the Kickstarter is live!</b>'
+                            } %}
+                            {% include 'component/steps/upcoming.html.twig' with {
+                              'title' : 'Wait a month.',
+                              'description' : 'We need to wait a month for everybody to order their elePHPant<br>on Kickstarter. 30 days is enough.'
+                            } %}
+                            {% include 'component/steps/upcoming.html.twig' with {
+                              'title' : 'Order the plush to the factory in China',
+                              'description' : 'When we have the number of elephpants that we need to produce<br>we will place an order with the factory.'
+                            } %}
+                            {% include 'component/steps/upcoming.html.twig' with {
+                              'title' : 'Get the elePHPants delivered to Paris, France.',
+                              'description' : 'We will ship all the elePHPants to our ESAT partner, they will ensure<br>that all plush arrive to their owner!'
+                            } %}
+                            {% include 'component/steps/upcoming.html.twig' with {
+                              'title' : 'Shipping thousands of elePHPants.',
+                              'description' : 'The ESAT will ship all the plush toys to their owner all around the World. It may<br>take some time to perform such operation since we expect to have at least<br>3000 elePHPants to ship!'
+                            } %}
+                            {% include 'component/steps/upcoming.html.twig' with {
+                              'title' : 'Everybody is happy ❤️',
+                              'description' : 'You all get your elePHPant and you can spread the World about Sylius!',
+                              'isLast': true
+                            } %}
                         </ol>
                     </nav>
                 </div>
