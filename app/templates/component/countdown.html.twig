@@ -1,23 +1,6 @@
 <!-- Countdown -->
     <div class="mx-auto mt-16">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:grid-cols-2 sm:gap-2" x-data="timer(new Date('2023-12-01 00:00:00'))" x-init="init();">
-            <div class="flex flex-col items-center px-4">
-                <span x-text="time().days" class="text-3xl">00</span>
-                <span class="text-gray-400 mt-2 text-2xl">Days</span>
-            </div>
-            <div class="flex flex-col items-center px-4">
-                <span x-text="time().hours" class="text-3xl">00</span>
-                <span class="text-gray-400 mt-2 text-2xl">Hours</span>
-            </div>
-            <div class="flex flex-col items-center px-4">
-                <span x-text="time().minutes" class="text-3xl">00</span>
-                <span class="text-gray-400 mt-2 text-2xl">Minutes</span>
-            </div>
-            <div class="flex flex-col items-center px-4">
-                <span x-text="time().seconds" class="text-3xl">00</span>
-                <span class="text-gray-400 mt-2 text-2xl">Seconds</span>
-            </div>
-        </div>                      
+        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">TODAY!</h1>                  
     </div>
     <script>
         function timer(expiry) {
